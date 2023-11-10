@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator BMI</title>
+</head>
+
+<body>
+    <header id="header-bar">
+        <h1>Kalkulator BMI</h1>
+    </header>
+    <div>
+      <form id="bmiForm">
+            <label for="gender">Jenis Kelamin:</label><br>
+            <input type="radio" name="gender" value="male" checked> Laki-laki
+            <input type="radio" name="gender" value="female"> Perempuan<br><br>
+
+            <label for="weight">Berat Badan (kg):</label><br>
+            <input type="number" id="weight" name="weight" required><br><br>
+
+            <label for="age">Usia:</label><br>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <label for="height">Tinggi Badan (cm):</label><br>
+            <input type="number" id="height" name="height" required><br><br>
+
+            <input type="button" value="Hitung" onclick="calculateBMI()">
+            <input type="reset" value="Reset">
+        </form>
+
+    </div>
+
+    <h3>Keunggulan Fitur</h3>
+    <p>1. Menghitung berat badan</p>
+    <p>2. Menentukan kategori berat badan ideal atau tidak</p>
+    <p>3. Mempersiapkan program penurunan berat badan</p>
+    
+    <br>
+
+    <p>kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syart seperti dokter.</p>
+    <br>
+
+    <p>Kalkulaator akan memberi Anda gambaran tentang pertandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI - Kh/M2</p>
+    <br>
+
+    <header id="header-bar">
+      <h1>Hasil</h1>
+  </header>   
+    <div id="result" ></div>
+    <br>
+    <nav class="navigation-bar"> 
+
+    </nav>
+    
+        <button><a href="">Download App</a></button>
+        <button><a href="">Contact Us</a></button>
+   
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
